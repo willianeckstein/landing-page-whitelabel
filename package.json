@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "type-check": "tsc -p tsconfig.json --noEmit",
+    "type-check:ci": "tsc -p tsconfig.ci.json --noEmit",
+    "clean:ts": "rimraf **/*.tsbuildinfo node_modules/.cache/tsbuild"
   },
   "dependencies": {
     "react": "19.1.0",
