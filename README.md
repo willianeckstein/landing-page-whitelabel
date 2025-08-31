@@ -1,27 +1,27 @@
 # Landing Page White-Label
 
-> 🚀 Base de landing page moderna, reutilizável e de alta performance, criada com **Next.js 15**, **React 19**, **TypeScript 5** e **TailwindCSS 4**.  
-> Focada em boas práticas de **arquitetura, acessibilidade, SEO e performance**.  
+> 🚀 Modern, reusable, and high-performance landing page base built with **Next.js 15**, **React 19**, **TypeScript 5**, and **TailwindCSS 4**.  
+> Focused on best practices for **architecture, accessibility, SEO, and performance**.  
 
 ---
 
-## ✨ Objetivo
+## ✨ Purpose
 
-Este projeto serve como **template white-label** para construção de landing pages:
-- Reutilizável em projetos reais.
-- Configurado com **type-checking avançado**.
-- Preparado para **CI/CD** e verificação de qualidade.
-- Base para estudos e aprofundamento técnico em nível avançado.
+This project serves as a **white-label template** for building landing pages:
+- Reusable in real-world projects.
+- Configured with **advanced type-checking**.
+- Ready for **CI/CD** and quality verification.
+- A foundation for learning and deepening technical skills at an advanced level.
 
 ---
 
-## 📂 Estrutura Inicial
+## 📂 Project Structure
 ```
-├── .github/workflows/   # actions de CI
-├── src/                 # código fonte
-│   └── app/             # rotas do Next.js (App Router)
-├── tsconfig.json        # config TS para dev
-├── tsconfig.ci.json     # config TS mais rígida para CI
+├── .github/workflows/   # CI workflows
+├── src/                 # source code
+│   └── app/             # Next.js App Router routes
+├── tsconfig.json        # TypeScript config for development
+├── tsconfig.ci.json     # stricter TypeScript config for CI
 ├── package.json
 └── README.md
 ```
@@ -30,19 +30,19 @@ Este projeto serve como **template white-label** para construção de landing pa
 
 ## ⚙️ Scripts
 
-| Comando                | Descrição                                                                 |
+| Command                | Description                                                               |
 |-------------------------|---------------------------------------------------------------------------|
-| `npm run dev`          | Inicia servidor de desenvolvimento.                                       |
-| `npm run build`        | Gera build de produção.                                                   |
-| `npm start`            | Roda servidor em produção.                                                |
-| `npm run lint`         | Executa lint (Next + ESLint).                                             |
-| `npm run type-check`   | Checagem de tipos local (rápida, ignora libs de terceiros).                |
-| `npm run type-check:ci`| Checagem de tipos em modo CI (rígida, valida libs também).                 |
-| `npm run clean:ts`     | Remove caches e arquivos `.tsbuildinfo`.                                  |
+| `npm run dev`          | Starts the development server.                                            |
+| `npm run build`        | Builds the production bundle.                                             |
+| `npm start`            | Runs the app in production mode.                                          |
+| `npm run lint`         | Runs lint checks (Next + ESLint).                                         |
+| `npm run type-check`   | Local type-check (fast, skips third-party libraries).                     |
+| `npm run type-check:ci`| CI type-check (strict, validates third-party libraries as well).           |
+| `npm run clean:ts`     | Removes caches and `.tsbuildinfo` files.                                  |
 
 ---
 
-## 🧰 Tecnologias
+## 🧰 Tech Stack
 
 - [Next.js 15 (App Router)](https://nextjs.org/)
 - [React 19](https://react.dev/)
@@ -52,39 +52,39 @@ Este projeto serve como **template white-label** para construção de landing pa
 
 ---
 
-## 🔒 Qualidade & CI
+## 🔒 Quality & CI
 
-- **TypeScript** com flags estritas (`exactOptionalPropertyTypes`, `noUncheckedIndexedAccess`, etc).
-- **Scripts separados** para checagem local vs CI.
-- **GitHub Action** para rodar type-checking em todo `push`/`PR`.
-- Arquivo `.nvmrc` para garantir versão de Node consistente.
+- **TypeScript** with strict flags (`exactOptionalPropertyTypes`, `noUncheckedIndexedAccess`, etc).
+- **Separate scripts** for local vs CI checks.
+- **GitHub Action** to run type-checking on every `push`/`PR`.
+- `.nvmrc` file to ensure consistent Node.js version.
 
 ---
 
-## 🚀 Como usar
+## 🚀 Getting Started
 
-1. Clone o repositório:
+1. Clone the repository:
 ```bash
 git clone https://github.com/sua-org/landing-page-whitelabel.git
 cd landing-page-whitelabel
 ```
 
-2.	Configure o Node conforme .nvmrc:
+2.	Set Node.js version according to .nvmrc:
 ```bash
 nvm use
 ```
 
-3.	Instale as dependências:
+3.	Install dependencies:
 ```bash
 npm install
 ```
 
-4.	Rode em desenvolvimento:
+4.	Run in development mode:
 ```bash
 npm run dev
 ```
 
-## 📜 Licença
+## 📜 License
 
 MIT © Willian Eckstein
-Use livremente, com responsabilidade.
+Free to use responsibly.
