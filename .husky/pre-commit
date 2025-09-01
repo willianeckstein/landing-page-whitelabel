@@ -1,6 +1,2 @@
-#!/usr/bin/env sh
-. "$(dirname "$0")/_/husky.sh"
-
 npm run -s type-check || exit 1
-
 npx lint-staged
