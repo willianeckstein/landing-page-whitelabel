@@ -57,5 +57,8 @@ jobs:
       - name: Lint
         run: npm run lint
 
+      - name: Build (generate Next types)
+        run: npm run build -- --no-lint
+
       - name: Type check (CI mode)
         run: npm run type-check:ci
